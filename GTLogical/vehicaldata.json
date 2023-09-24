@@ -1,0 +1,212 @@
+{
+    "posts": [
+      {
+        "id": 1,
+        "title": "json-server",
+        "author": "typicode"
+    }
+  ],
+
+    "vtutypedata": [{
+            "vtuType": "GVT-1040",
+            "commands": [
+                "setdigout ## Y1 Y2 Z1 Z2",
+                "getstatus",
+                "getinfo",
+                "getver",
+                "getgps"
+            ]
+        },
+        {
+            "vtuType": "GVT-1010",
+            "commands": [
+                "$ST+UNPM",
+                "$ST+COMM",
+                "$ST+GETPOSITION"
+            ]
+        }
+    ],
+    "vtucomm": {
+        "data": [{
+                "id": "7789",
+                "softwareId": " 101GT060358899052632976",
+                "vtuType": "GVT-1209",
+                "vtuTypeId": "28",
+                "vtuId": 7789,
+                "vehicle": {
+                    "id": "6811",
+                    "vehicleId": 6811,
+                    "vehicleNumber": "RSK-HR 67B 5214",
+                    "selected": true
+                },
+                "account": {
+                    "id": "610",
+                    "accountId": 610,
+                    "accountName": "RSK Transport Company"
+                }
+            },
+            {
+                "id": "4",
+                "softwareId": "1010000004",
+                "vtuType": "GVT-1010",
+                "vtuTypeId": "1",
+                "vtuId": 4,
+                "vehicle": {
+                    "id": "24628",
+                    "vehicleId": 24628,
+                    "vehicleNumber": "DTDC-DL 1LAD 4267",
+                    "selected": false
+                },
+                "account": {
+                    "id": "76",
+                    "accountId": 76,
+                    "accountName": "DTDC Express Limited (Delhi)"
+                }
+            },
+            {
+                "id": "7645",
+                "softwareId": "1010000016",
+                "vtuType": "GVT-1010",
+                "vtuTypeId": "1",
+                "vtuId": 7645,
+                "vehicle": {
+                    "id": "6677",
+                    "vehicleId": 6677,
+                    "vehicleNumber": "GVT-1010 AA-HR 26AW 5119 I10",
+                    "selected": false
+                },
+                "account": {
+                    "id": "441",
+                    "accountId": 441,
+                    "accountName": "Airtel AES"
+                }
+            },
+            {
+                "id": "25",
+                "softwareId": "1010000024",
+                "vtuType": "GVT-1010",
+                "vtuTypeId": "1",
+                "vtuId": 25,
+                "vehicle": {
+                    "id": "18",
+                    "vehicleId": 18,
+                    "vehicleNumber": "DT-MH 12DT 0851",
+                    "selected": false
+                },
+                "account": {
+                    "id": "25",
+                    "accountId": 25,
+                    "accountName": "Deepak Traders"
+                }
+            },
+            {
+                "id": "146",
+                "softwareId": "1010000025",
+                "vtuType": "GVT-1010",
+                "vtuTypeId": "1",
+                "vtuId": 146,
+                "vehicle": {
+                    "id": "125",
+                    "vehicleId": 125,
+                    "vehicleNumber": "Globe-HR 55 D 4561",
+                    "selected": false
+                },
+                "account": {
+                    "id": "5",
+                    "accountId": 5,
+                    "accountName": "GRC Auto Carriers Pvt.Ltd"
+
+                }
+            },
+            {
+                "id": "16",
+                "softwareId": "1010000026",
+                "vtuType": "GVT-1010",
+                "vtuTypeId": "1",
+                "vtuId": 16,
+                "account": {
+                    "id": "7",
+                    "accountId": 7,
+                    "accountName": "Overnite Express"
+                }
+            },
+            {
+                "id": "30",
+                "softwareId": "1010000028",
+                "vtuType": "GVT-1010",
+                "vtuTypeId": "1",
+                "vtuId": 30,
+                "vehicle": {
+                    "id": "22",
+                    "vehicleId": 22,
+                    "vehicleNumber": "Over-DL 1LR 2757",
+                    "selected": false
+                },
+                "account": {
+                    "id": "7",
+                    "accountId": 7,
+                    "accountName": "Overnite Express"
+                }
+            },
+            {
+                "id": "7735",
+                "softwareId": "1010000031",
+                "vtuType": "GVT-1010",
+                "vtuTypeId": "1",
+                "vtuId": 7735,
+                "vehicle": {
+                    "id": "6767",
+                    "vehicleId": 6767,
+                    "vehicleNumber": "GVT-1010 AA-HR 26 AR 6772 Ford Ikon",
+                    "selected": false
+                },
+                "account": {
+                    "id": "441",
+                    "accountId": 441,
+                    "accountName": "Airtel AES"
+                }
+            },
+            {
+                "id": "9",
+                "softwareId": "1010000032",
+                "vtuType": "GVT-1010",
+                "vtuTypeId": "1",
+                "vtuId": 9,
+                "vehicle": {
+                    "id": "6",
+                    "vehicleId": 6,
+                    "vehicleNumber": "Suraj-HR 58 6054",
+                    "selected": false
+                },
+                "account": {
+                    "id": "422",
+                    "accountId": 422,
+                    "accountName": "Suraj Transport"
+                }
+            },
+            {
+                "id": "13",
+                "softwareId": "1010000036",
+                "vtuType": "GVT-1010",
+                "vtuTypeId": "1",
+                "vtuId": 13,
+                "vehicle": {
+                    "id": "10",
+                    "vehicleId": 10,
+                    "vehicleNumber": "P812",
+                    "selected": false
+                },
+                "account": {
+                    "id": "30",
+                    "accountId": 30,
+                    "accountName": "Premier Limited"
+                }
+            }
+        ],
+        "page": 0,
+        "size": 10,
+        "totalRecords": 28421
+    }
+
+
+}
