@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="ALL_INT" strict="true" name="FMLogConfig"
+	monitorInterval="1">
+	<Properties>
+		<Property name="logDir" value="/usr/gt/gtlogs" />
+		<Property name="logFilename" value="gt" />
+		<Property name="logFilenameExtension" value=".log" />
+	</Properties>
+	<Appenders>
+		<Appender type="RollingFile" name="RollingFile"
+			fileName="${logDir}/${logFilename}${logFilenameExtension}"
+			filePattern="${logDir}/${logFilename}-%d{yyyy.MM.dd}-%i${logFilenameExtension}">
+			<Policies>
+				<OnStartupTriggeringPolicy />
+				<SizeBasedTriggeringPolicy size="20MB" />
+				<TimeBasedTriggeringPolicy interval="1"
+					modulate="true" />
+			</Policies>
+			<DefaultRolloverStrategy max="200000" />
+			<Layout type="PatternLayout"
+				pattern="%d %thread [%level] [%C{1}-%L] [%X{orgId}] [%X{username}] [%X{endpoint}] %message%n" />
+		</Appender>
+
+		<Appender type="Console" name="Console" target="SYSTEM_OUT">
+			<Layout type="PatternLayout"
+				pattern="%d %thread [%level] [%C{1}-%L] [%X{orgId}] [%X{username}] [%X{endpoint}] %message%n" />
+		</Appender>
+	</Appenders>
+	<!-- While deploying the app in production, please make sure that: 1. the 
+		console appender ref is commented for com.geotrackers.fleetmgmt logger 2. 
+		the log level for both Root and com.geotrackers.fleetmgmt loggers is set 
+		to either ERROR or WARN -->
+		<Loggers>
+<!-- 	<Loggers>
+		<Logger name="com.gt" level="debug" additivity="false">
+			<AppenderRef ref="Console" />
+			<AppenderRef ref="RollingFile" />
+		</Logger>
+
+		<Logger name="com.gt.services.cache.mq.GTDDX" level="debug" additivity="false">
+                        <AppenderRef ref="Console" />
+                        <AppenderRef ref="RollingFile" />
+		</Logger>
+
+		<Logger name="com.gt.services.impl.VehicleStatusUpdateThreadServiceImpl" level="debug" additivity="false">
+                        <AppenderRef ref="Console" />
+                        <AppenderRef ref="RollingFile" />
+		</Logger>
+
+		<Logger name="com.gt.services.impl.OutputPatternThreadServiceImpl" level="debug" additivity="false">
+                        <AppenderRef ref="Console" />
+                        <AppenderRef ref="RollingFile" />
+		</Logger> -->
+
+	<Logger name="paymentgateway" level="debug" additivity="false">
+                        <AppenderRef ref="Console" />
+                        <AppenderRef ref="RollingFile" />
+		</Logger>
+		
+		<!-- SQL Logs  -->
+		<Logger name="org.hibernate.SQL" level="debug">
+                        <AppenderRef ref="Console" />
+                        <AppenderRef ref="RollingFile" />
+		</Logger>
+
+		<!-- Cache Logs -->
+		<Logger name="org.hibernate.cache" level="debug">
+                        <AppenderRef ref="Console" />
+                        <AppenderRef ref="RollingFile" />
+                </Logger>
+		
+		<!--Root level="debug"> <AppenderRef ref="RollingFile"/> </Root -->
+	</Loggers>
+</Configuration>
